@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.garikini">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GariKini"
+        android:usesCleartextTraffic="true">
+
+        <!-- Theme is optional and only needed if default theme has no action bar. -->
+        <activity
+            android:name="com.canhub.cropper.CropImageActivity"
+            android:theme="@style/Theme.GariKini"
+            />
+
+        <activity
+            android:name="com.app.garikini.Activity.RegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.app.garikini.Activity.PickACategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.app.garikini.Activity.TestingActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.app.garikini.Activity.OtherAdsDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.app.garikini.Activity.PostOthersAdsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.app.garikini.Activity.ViewZoomImageActivity"
+            android:theme="@style/Theme.GariKini.NoActionBar"
+            android:exported="false" />
+        <activity
+            android:name="com.app.garikini.Activity.AdsDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.app.garikini.Activity.ProceedToPostActivity"
+            android:configChanges="screenSize|orientation"
+            android:exported="false"
+            android:theme="@style/Theme.GariKini.NoActionBar" />
+        <activity
+            android:name="com.app.garikini.Activity.MakePostActivity"
+            android:configChanges="screenSize|orientation"
+            android:exported="false" />
+        <activity
+            android:name="com.app.garikini.Activity.MembershipActivity"
+            android:configChanges="screenSize|orientation" />
+        <activity
+            android:name="com.app.garikini.Activity.LoginOrRegistrationActivity"
+            android:configChanges="screenSize|orientation"
+            android:theme="@style/Theme.GariKini.NoActionBar" />
+        <activity
+            android:name="com.app.garikini.Activity.LoginActivity"
+            android:configChanges="screenSize|orientation" />
+        <activity
+            android:name="com.app.garikini.Activity.MainActivity"
+            android:configChanges="screenSize|orientation"
+            android:exported="true"
+            android:theme="@style/Theme.GariKini.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Required: set your sentry.io project identifier (DSN) -->
+        <meta-data
+            android:name="io.sentry.dsn"
+            android:value="https://5e6fb0c1cda59932a8cdfb5aedd8b9be@o4506144940097536.ingest.sentry.io/4506144941473792" /> <!-- enable automatic breadcrumbs for user interactions (clicks, swipes, scrolls) -->
+        <meta-data
+            android:name="io.sentry.traces.user-interaction.enable"
+            android:value="true" /> <!-- enable screenshot for crashes (could contain sensitive/PII data) -->
+        <meta-data
+            android:name="io.sentry.attach-screenshot"
+            android:value="true" /> <!-- enable view hierarchy for crashes -->
+        <meta-data
+            android:name="io.sentry.attach-view-hierarchy"
+            android:value="true" /> <!-- enable the performance API by setting a sample-rate, adjust in production env -->
+        <meta-data
+            android:name="io.sentry.traces.sample-rate"
+            android:value="1.0" /> <!-- enable profiling when starting transactions, adjust in production env -->
+        <meta-data
+            android:name="io.sentry.traces.profiling.sample-rate"
+            android:value="1.0" />
+    </application>
+
+</manifest>

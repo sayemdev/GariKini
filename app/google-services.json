@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "150300364691",
+    "project_id": "gari-kini-9d513",
+    "storage_bucket": "gari-kini-9d513.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:150300364691:android:4c8d8eb3796ddd89d26266",
+        "android_client_info": {
+          "package_name": "com.app.garikini"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwfvAsm-Txr5UsZktFbBVuKs89xounfBs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:150300364691:android:b293d9fea2171363d26266",
+        "android_client_info": {
+          "package_name": "com.bd.garikini"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwfvAsm-Txr5UsZktFbBVuKs89xounfBs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

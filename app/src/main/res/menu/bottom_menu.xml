@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ created by Sayem Hossen Saimon on  at .
+Email: saimonchowdhuryi96@gmail.com.
+Phone: +8801882046404.
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/homeMenuId"
+        android:enabled="true"
+        android:icon="@drawable/ic_round_home_24"
+        android:title="@string/home"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/searchMenuId"
+        android:enabled="true"
+        android:icon="@drawable/ic_round_search_24"
+        android:title="@string/search"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/postMenuId"
+        android:title="Post"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/chatsMenuId"
+        android:enabled="true"
+        android:icon="@drawable/ic_chat"
+        android:title="@string/chats"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/profileMenuId"
+        android:enabled="true"
+        android:icon="@drawable/ic_profile"
+        android:title="Profile"
+        app:showAsAction="always" />
+</menu>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Fragments.SelectCarModelFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:src="@drawable/ic_round_arrow_back_24" />
+
+        <TextView
+            android:id="@+id/locationTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_toEndOf="@id/backButton"
+            android:paddingStart="12dp"
+            android:text="Model"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/closeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:src="@drawable/ic_round_close_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/locationTV"
+            android:layout_toEndOf="@id/backButton"
+            android:paddingStart="12dp"
+            android:text="Select your car model" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Popular Models"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/carModelList"/>
+
+       <LinearLayout
+           android:visibility="gone"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <LinearLayout
+               android:id="@+id/accordLT"
+               android:background="?selectableItemBackground"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:paddingTop="12dp"
+               android:paddingBottom="12dp"
+               android:orientation="vertical">
+
+               <TextView
+                   android:textColor="@color/black"
+                   android:textSize="16dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Accord"/>
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:layout_marginTop="6dp"
+                   android:background="@color/cardBg"/>
+
+           </LinearLayout>
+           <LinearLayout
+               android:id="@+id/airwaveLT"
+               android:background="?selectableItemBackground"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:paddingTop="12dp"
+               android:paddingBottom="12dp"
+               android:orientation="vertical">
+
+               <TextView
+                   android:textColor="@color/black"
+                   android:textSize="16dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Airwave"/>
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:layout_marginTop="6dp"
+                   android:background="@color/cardBg"/>
+
+           </LinearLayout>
+           <LinearLayout
+               android:id="@+id/crVLT"
+               android:background="?selectableItemBackground"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:paddingTop="12dp"
+               android:paddingBottom="12dp"
+               android:orientation="vertical">
+
+               <TextView
+                   android:textColor="@color/black"
+                   android:textSize="16dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="CR-V"/>
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:layout_marginTop="6dp"
+                   android:background="@color/cardBg"/>
+
+           </LinearLayout>
+           <LinearLayout
+               android:id="@+id/cityLt"
+               android:background="?selectableItemBackground"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:paddingTop="12dp"
+               android:paddingBottom="12dp"
+               android:orientation="vertical">
+
+               <TextView
+                   android:textColor="@color/black"
+                   android:textSize="16dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="City"/>
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:layout_marginTop="6dp"
+                   android:background="@color/cardBg"/>
+
+           </LinearLayout>
+       </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
